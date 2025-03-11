@@ -1,1 +1,27 @@
 /*  your css code here. If applicable */
+#grid-blogs{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: beige;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.grid-blog{
+
+    height: 300px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 14px;
+}
+@media(max-width:746px){
+    #grid-blogs{
+         grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:450px){
+    #grid-blogs{
+         grid-template-columns: 1fr;
+    }
+}
